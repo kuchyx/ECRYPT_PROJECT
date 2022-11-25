@@ -2,8 +2,13 @@
 
 \begin{document}
 \section{Description of the used algorithm}
-\subsection{Short theory}
+Sieve of Eratosthenes is used to find all prime numbers below certain limit. \\ 
+It starts with number 2, which is the first prime number and marks all multiplies of this number (up to predefined limit) as not prime, those numbers will be later ignored \\ 
+Then it takes next available number (3) and does the same thing \\ 
+This is repeated until there are no more numbers below the limit which are neither prime nor crossed out \\ 
+Then we return the list of all non-crossed out (prime) numbers
 \section{Functional description of the application}
+
 \subsection{Input data format}
 \subsection{Output text on console}
 \subsection{Format of output data}
