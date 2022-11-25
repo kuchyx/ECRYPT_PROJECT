@@ -42,5 +42,8 @@ def print_sieve(num: int) -> None:
 # Driver code
 if __name__ == '__main__':
     num = int(input("Enter a number: "))
+    while num < 2:
+        print("Limit smaller than 2, pick another number")
+        num = int(input("Enter a number: "))
     print(f"Following are the prime numbers smaller than or equal to {num}")
     print_sieve(num)
