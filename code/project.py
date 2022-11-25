@@ -41,7 +41,7 @@ def print_sieve(num: int) -> None:
   
 # Driver code
 if __name__ == '__main__':
-    num = 3000
+    num = int(input("Enter a number: "))
     print("Following are the prime numbers smaller"),
     print("than or equal to", num)
     print_sieve(num)
