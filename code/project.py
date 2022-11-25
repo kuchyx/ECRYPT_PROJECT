@@ -11,14 +11,16 @@ def sieve_of_eratosthenes(num: int) -> list[int]:
     Returns:
         list[int]: List of prime numbers
     """
-    # boolean list
+    # boolean list to store if a number is prime or not
     prime = [True] * (num+1)
-    p = 2
+    p = 2 # starting prime number
+    # we will iterate till square root of num because 
+    # if a number is not prime then it will have a factor less than or equal to square root of that number
     while p <= math.sqrt(num):
         # If prime[p] is not
         # changed, then it is a prime
         if prime[p]:
-            i = (p << 1)
+            i = (p << 1) # i = p * 2
             # Updating all multiples of p
             while i <= num:
                 prime[i] = False
