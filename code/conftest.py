@@ -24,15 +24,6 @@ def pytest_configure(config):
     pytest.composites = int(config.getoption("--composites"))
 
 
-@pytest.fixture
-def primes_obtained():
-    return set(sieve_of_eratosthenes(pytest.primes + 1))
-
-
-@pytest.fixture
-def composites_obtained():
-    return set(sieve_of_eratosthenes(pytest.composites + 1))
-
 def pytest_generate_tests(metafunc):
     df_prime = pd.read_csv("P-100000.csv", header=None)
     df_prime = df_prime[df_prime.iloc[:, 1] <  pytest.primes]
@@ -45,7 +36,6 @@ def pytest_generate_tests(metafunc):
         metafunc.parametrize('prime', primes)
         metafunc.parametrize('primes_obtained', [sieve_of_eratosthenes(max(primes) + 1),])
 
-    if metafunc.function.__name__ == 'test_negatives':
+    if metafunc.function.__name__ == 'test_composites':
         metafunc.parametrize('composite', composites)
-        
         metafunc.parametrize('primes_obtained', [sieve_of_eratosthenes(max(composites) + 1),])

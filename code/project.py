@@ -10,6 +10,8 @@ def sieve_of_eratosthenes(num: int) -> list[int]:
     Returns:
         list[int]: List of prime numbers
     """
+    if num <= 0:
+        raise ValueError("Number should not be negative.")
     # boolean list to store if a number is prime or not
     prime = [True] * (num+1)
     p = 2 # starting prime number
@@ -41,8 +43,5 @@ def print_sieve(num: int) -> None:
 # Driver code
 if __name__ == '__main__':
     num = int(input("Enter a number: "))
-    while num < 2:
-        print("Limit smaller than 2, pick another number")
-        num = int(input("Enter a number: "))
     print(f"Following are the prime numbers smaller than or equal to {num}")
     print_sieve(num)
