@@ -16,9 +16,10 @@ This is repeated until there are no more numbers below the limit which are neith
 Then we return the list of all non-crossed out (prime) numbers \\ 
 We used more optimized version of this algorithm and cross out composites only up to $\sqrt{n}$ in the main loop \\ 
 \begin{figure}[H]
-    \caption{Sieve of erastosthenes example for numbers up to 120, prime numbers on the right, darker colors show prime numbers, lighter colors show numbers which were checked while checking whether given number was prime \href{https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes}{SOURCE} }
+
 \centering
 \includegraphics{screenshoot/algorithm_description.png}
+\caption{Sieve of erastosthenes example for numbers up to 120, prime numbers on the right, darker colors show prime numbers, lighter colors show numbers which were checked while checking whether given number was prime \href{https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes}{SOURCE} }
 \end{figure}
 \section{Functional description of the application}
 First we define the limit, we name this limit as $num$ which will decide how many numbers we will check, either by user interface or we hard code it in \\ 
@@ -33,10 +34,11 @@ then we increment the $p$ and the whole loop repeats until we run out of numbers
 we return array of prime numbers to function which prints those numbers 
 
 \begin{figure}[H]
-    \caption{Example of full program use }
 \centering
 \includegraphics[width=\textwidth]
 {screenshoot/program_use.png}
+\caption{Example of full program use }
+
 \end{figure}
 
 \subsection{Input data format}
@@ -50,17 +52,23 @@ Output data is a string
 There are three code blocks, sieve\_of\_eratosthenes, print\_sieve and main function executed at the beginning, main functions gets no arguments and outputs string consisting of prime numbers, print\_sieve function receives number which describes how many numbers should be checked in the sieve, similarly sieve\_of\_erastosthenes takes this number as an argument, and returns list of all prime numbers found by the sieve.
 
 \begin{figure}[H]
-    \caption{Flowchart of code flow }
 \centering
 \includegraphics[height=\textwidth]
 {screenshoot/code_structure.pdf}
+\caption{Flowchart of code flow }
+
 \end{figure}
 
 
 
 \section{Tests}
 We did three types of tests, positive tests which inputted prime numbers into the sieve and checked if the sieve correctly validated them as prime, negative tests which inputted composite numbers into the sieve and checked if the sieve correctly determined them to not be prime. \\ 
-We know which numbers are prime and which are composite based on the reference value which source was given below. 
+We know which numbers are prime and which are composite based on the reference value which source was given below. \\ 
+We created two command line arguments: 
+\begin{itemize}
+    \item  primes - which sets maximal number up to which we check correctness of our program in determining whether the number is prime
+    \item composites - which sets maximal number up to which we check correctness of our program in determining whether the number is composite
+\end{itemize}
 \subsection{Source of reference values}
 All reference values were taken from: \href{http://www.naturalnumbers.org/primes.html}{http://www.naturalnumbers.org/primes.html}
 
@@ -68,18 +76,20 @@ All reference values were taken from: \href{http://www.naturalnumbers.org/primes
 All of the tests passed successfully with upper limit as high as 100000
 
 \begin{figure}[H]
-    \caption{Test results for up to 100 numbers}
 \centering
 \includegraphics[width=\textwidth]
 {screenshoot/tests100.png}
+\caption{Test results for up to 100 numbers}
+
 \end{figure}
 
 
 \begin{figure}[H]
-    \caption{Test results for up to 100000 numbers}
 \centering
 \includegraphics[width=\textwidth]
 {screenshoot/tests100000.png}
+\caption{Test results for up to 100000 numbers}
+
 \end{figure}
 
 
