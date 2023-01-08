@@ -1,5 +1,4 @@
 '''Python program to print all Primes Smaller than or equal to N using Sieve of Eratosthenes'''
-import time
 import math
   
 def sieve_of_eratosthenes(num: int) -> list[int]:
