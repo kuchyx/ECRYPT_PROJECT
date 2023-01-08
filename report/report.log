@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2023.1.8)  8 JAN 2023 18:29
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Arch Linux) (preloaded format=xelatex 2023.1.8)  8 JAN 2023 18:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -200,12 +200,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
 LaTeX Info: Redefining \nameref on input line 9.
+ (./report.out) (./report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 11.
@@ -242,75 +239,21 @@ Overfull \hbox (30.62402pt too wide) in paragraph at lines 65--66
 \TU/lmr/m/n/12 All reference values were taken from: []http://www.naturalnumbers.org/primes.html[] 
  []
 
-
-LaTeX Warning: File `screenshoot/prime_tests.png' not found on input line 74.
-
-/home/kuchy/ECRYPT_PROJECT/report/report.tex:74: Unable to load picture or PDF file 'screenshoot/prime_tests.png'.
-<to be read again> 
-                   }
-l.74 {screenshoot/prime_tests.png}
-                                  
-The requested image couldn't be read because
-it was not a recognized image format.
-
-
-/home/kuchy/ECRYPT_PROJECT/report/report.tex:74: Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 {screenshoot/prime_tests.png}
-                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-File: screenshoot/prime_tests.png Graphic file (type bmp)
-<screenshoot/prime_tests.png>
-
-LaTeX Warning: File `screenshoot/composite_tests.png' not found on input line 81.
-
-/home/kuchy/ECRYPT_PROJECT/report/report.tex:81: Unable to load picture or PDF file 'screenshoot/composite_tests.png'.
-<to be read again> 
-                   }
-l.81 {screenshoot/composite_tests.png}
-                                      
-The requested image couldn't be read because
-it was not a recognized image format.
-
-
-/home/kuchy/ECRYPT_PROJECT/report/report.tex:81: Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.81 {screenshoot/composite_tests.png}
-                                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-File: screenshoot/composite_tests.png Graphic file (type bmp)
-<screenshoot/composite_tests.png>
-[5] (./report.aux)
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  921227E60FDC27E8C95340763A65AB50;1671.
+File: screenshoot/tests100.png Graphic file (type bmp)
+<screenshoot/tests100.png>
+File: screenshoot/tests100000.png Graphic file (type bmp)
+<screenshoot/tests100000.png>
+[5] [6] (./report.aux)
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: 921227E60FDC27E8C95340763A65AB50;1671.
  ) 
 Here is how much of TeX's memory you used:
- 8130 strings out of 476156
- 131920 string characters out of 5814964
- 427013 words of memory out of 5000000
- 28807 multiletter control sequences out of 15000+600000
+ 8027 strings out of 476156
+ 128396 string characters out of 5814964
+ 429007 words of memory out of 5000000
+ 28722 multiletter control sequences out of 15000+600000
  473316 words of font info for 47 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,6n,64p,488b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.xdv (5 pages, 39852 bytes).
+Output written on report.xdv (6 pages, 41992 bytes).
